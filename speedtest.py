@@ -15,6 +15,8 @@
 #    License for the specific language governing permissions and limitations
 #    under the License.
 
+# Modified and Updated by: Aniket Biswas [xunicatt]
+
 import csv
 import datetime
 import errno
@@ -681,7 +683,7 @@ def build_user_agent():
                                 platform.architecture()[0]),
         'Python/%s' % platform.python_version(),
         '(KHTML, like Gecko)',
-        'speedtest-cli/%s' % __version__
+        'netband/%s' % __version__
     )
     user_agent = ' '.join(ua_tuple)
     printer('User-Agent: %s' % user_agent, debug=True)
@@ -1695,7 +1697,7 @@ def ctrl_c(shutdown_event):
 def version():
     """Print the version"""
 
-    printer('speedtest-cli %s' % __version__)
+    printer('netband %s' % __version__)
     printer('Python %s' % sys.version.replace('\n', ''))
     sys.exit(0)
 
@@ -1714,7 +1716,7 @@ def parse_args():
         'speedtest.net.\n'
         '------------------------------------------------------------'
         '--------------\n'
-        'https://github.com/sivel/speedtest-cli')
+        'https://github.com/xunicatt/netband')
 
     parser = ArgParser(description=description)
     # Give optparse.OptionParser an `add_argument` method for

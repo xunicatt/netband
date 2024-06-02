@@ -15,6 +15,8 @@
 #    License for the specific language governing permissions and limitations
 #    under the License.
 
+# Modified and Updated by: Aniket Biswas [xunicatt]
+
 import os
 import re
 import codecs
@@ -56,21 +58,21 @@ except:
 
 
 setup(
-    name='speedtest-cli',
+    #new project name
+    name='netband',
     version=find_version('speedtest.py'),
     description=('Command line interface for testing internet bandwidth using '
                  'speedtest.net'),
     long_description=long_description,
     keywords='speedtest speedtest.net',
-    author='Matt Martz',
-    author_email='matt@sivel.net',
-    url='https://github.com/sivel/speedtest-cli',
+    author='Aniket Biswas',
+    author_email='contact.aniket.biswas@gmail.com',
+    url='https://github.com/xunicatt/netband',
     license='Apache License, Version 2.0',
     py_modules=['speedtest'],
     entry_points={
         'console_scripts': [
-            'speedtest=speedtest:main',
-            'speedtest-cli=speedtest:main'
+            'netband=speedtest:main'
         ]
     },
     classifiers=[
