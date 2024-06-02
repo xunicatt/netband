@@ -60,21 +60,22 @@ except:
 setup(
     #new project name
     name='netband',
-    version=find_version('speedtest.py'),
+    version=find_version('netband.py'),
     description=('Command line interface for testing internet bandwidth using '
                  'speedtest.net'),
     long_description=long_description,
-    keywords='speedtest speedtest.net',
+    keywords='netband speedtest speedtest.net',
     author='Aniket Biswas',
     author_email='contact.aniket.biswas@gmail.com',
     url='https://github.com/xunicatt/netband',
     license='Apache License, Version 2.0',
-    py_modules=['speedtest'],
+    py_modules=['netband'],
     entry_points={
         'console_scripts': [
-            'netband=speedtest:main'
+            'netband=netband:main'
         ]
     },
+    data_files=[('man/man1', ['netband.1'])],
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Programming Language :: Python',
