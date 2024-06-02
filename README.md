@@ -1,7 +1,7 @@
 # netband
 inter[net] [band]width
 
-Command line interface for testing internet bandwidth using speedtest.net. A mainted fork of 'sivel/speedtest-cli'. All the feature of 'speedtest-cli' is available in 'netband' without the depreciation warnings.
+Command line interface for testing internet bandwidth using speedtest.net. A maintained fork of [speedtest-cli](https://github.com/sivel/speedtest-cli). All the feature of 'speedtest-cli' is available in 'netband' without the depreciation warnings.
 
 # Installation
 `pip install netband`
